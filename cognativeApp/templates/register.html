@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class='header'>
+    {% if messages %}
+        <section>
+            {% for message in messages %}
+            <h3 {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h3>
+            {% endfor %}
+        </section>
+    {% endif %}
+    <section>
+        <h2>Register</h2>
+        <a href='/login/'>Log In</a>
+    </section>
+</div>
+<form action='/signin/' method='post'>
+    {% csrf_token %}
+    <section>
+        <label for='username'>Username:</label>
+        <input type='text' name='username' id='username'>
+    </section>
+    <section>
+        <label for='password'>Password:</label>
+        <input type='password' name='password' id='password'>
+    </section>
+    <button>Submit and Login</button>
+</form>
+{% endblock %}

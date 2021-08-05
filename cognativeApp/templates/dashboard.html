@@ -1,0 +1,11 @@
+{% extends "protectedBase.html" %}
+{% load static %}
+{% block content %}
+    <div class='header'>
+        <p>Admin</p>
+    </div>
+    {% for scale in scales %}
+    <img src="../../media/{{scale.scaleImg}}" alt='{{scale.type}}'>
+    {% endfor %}
+
+{%endblock%}

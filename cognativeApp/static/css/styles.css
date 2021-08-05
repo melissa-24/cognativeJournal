@@ -1,0 +1,122 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p1 {
+  background-color: #161414;
+  color: #d8c27c;
+}
+.p2 {
+  background-color: #d8c27c;
+  color: #161414;
+}
+.a1 {
+  color: #161414;
+  text-decoration: none;
+  margin: 1em;
+  font-size: 1.1em;
+}
+.border {
+  border: 1px dotted #c22424;
+}
+.hr {
+  width: 95%;
+  background-color: #30a880;
+  height: 2px;
+}
+* {
+  border: 1px dotted #c22424;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #161414;
+  color: #d8c27c;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8c27c;
+  color: #161414;
+  width: 95%;
+  justify-content: space-between;
+}
+body header h1 {
+  padding: 0 0.5em;
+}
+body header nav {
+  padding: 0 0.5em;
+}
+body header nav a {
+  color: #161414;
+  text-decoration: none;
+  margin: 1em;
+  font-size: 1.1em;
+}
+body hr {
+  width: 95%;
+  background-color: #30a880;
+  height: 2px;
+}
+body #main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+body #main .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+body #main .header section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+body #main .header section a {
+  color: #161414;
+  text-decoration: none;
+  margin: 1em;
+  font-size: 1.1em;
+}
+body #main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+body #main form section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0.5em;
+  justify-content: space-evenly;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
